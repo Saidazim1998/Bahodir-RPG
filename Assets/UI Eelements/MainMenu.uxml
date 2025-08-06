@@ -1,0 +1,66 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="root-container">
+        <!-- Header Section -->
+        <ui:VisualElement class="header-section">
+            <ui:VisualElement class="header-content">
+                <ui:VisualElement class="sword-icon"></ui:VisualElement>
+                <ui:Label text="GAMEPLAY" class="header-title" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Main Content Area -->
+        <ui:VisualElement class="main-content">
+            <!-- Left Panel - Settings -->
+            <ui:VisualElement class="settings-panel">
+                <!-- Difficulty Setting -->
+                <ui:VisualElement class="setting-row difficulty-row">
+                    <ui:Label text="DIFFICULTY" class="setting-label" />
+                    <ui:VisualElement class="difficulty-selector">
+                        <ui:Button class="difficulty-arrow left-arrow" text="‹" />
+                        <ui:Label text="Hard" class="difficulty-value" />
+                        <ui:Button class="difficulty-arrow right-arrow" text="›" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                <!-- Camera Settings -->
+                <ui:VisualElement class="setting-row">
+                    <ui:Label text="INVERT CAMERA (HORIZONTAL)" class="setting-label" />
+                    <ui:Label text="Off" class="setting-value" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="setting-row">
+                    <ui:Label text="INVERT CAMERA (VERTICAL)" class="setting-label" />
+                    <ui:Label text="Off" class="setting-value" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="setting-row">
+                    <ui:Label text="CAMERA SPEED" class="setting-label" />
+                    <ui:Label text="Default" class="setting-value" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="setting-row">
+                    <ui:Label text="PHOTO MODE" class="setting-label" />
+                    <ui:Label text="On" class="setting-value" />
+                </ui:VisualElement>
+                
+                <!-- Reset Button -->
+                <ui:VisualElement class="setting-row reset-row">
+                    <ui:Button text="RESET DEFAULTS" class="reset-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Right Panel - Description -->
+            <ui:VisualElement class="description-panel">
+                <ui:Label text="For players unafraid of death who are brave enough to face the ultimate challenge." class="description-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Exit Button -->
+        <ui:VisualElement class="exit-container">
+            <ui:Button class="exit-button">
+                <ui:VisualElement class="exit-icon"></ui:VisualElement>
+                <ui:Label text="EXIT" class="exit-text" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

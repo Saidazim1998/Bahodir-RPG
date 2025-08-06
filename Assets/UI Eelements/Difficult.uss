@@ -1,0 +1,209 @@
+/* Root Container */
+.root-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+/* Header Section */
+.header-section {
+    height: 120px;
+    background-color: rgba(40, 40, 40, 0.9);
+    background-image: url('project://database/Assets/UI/Textures/grunge-texture.png');
+    border-bottom-width: 3px;
+    border-bottom-color: rgba(100, 100, 100, 0.3);
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.header-content {
+    flex-direction: row;
+    align-items: center;
+}
+
+.sword-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('project://database/Assets/UI/Icons/sword-icon.png');
+    margin-right: 20px;
+}
+
+.header-title {
+    font-size: 32px;
+    color: white;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+/* Main Content */
+.main-content {
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 40px;
+}
+
+/* Settings Panel */
+.settings-panel {
+    flex-grow: 1;
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.setting-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.setting-row:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.setting-label {
+    font-size: 18px;
+    color: white;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.setting-value {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Difficulty Selector */
+.difficulty-row {
+    background-color: rgba(200, 60, 60, 0.8);
+}
+
+.difficulty-row:hover {
+    background-color: rgba(200, 60, 60, 0.9);
+}
+
+.difficulty-selector {
+    flex-direction: row;
+    align-items: center;
+}
+
+.difficulty-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 24px;
+    color: white;
+    -unity-font-style: bold;
+    cursor: arrow;
+}
+
+.difficulty-arrow:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.difficulty-value {
+    font-size: 18px;
+    color: white;
+    -unity-font-style: bold;
+    margin: 0 15px;
+    min-width: 60px;
+    -unity-text-align: middle-center;
+}
+
+/* Reset Button */
+.reset-row {
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.reset-button {
+    background-color: rgba(100, 100, 100, 0.3);
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 0.5);
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.reset-button:hover {
+    background-color: rgba(150, 150, 150, 0.4);
+    border-color: rgba(200, 200, 200, 0.7);
+}
+
+/* Description Panel */
+.description-panel {
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.description-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    -unity-text-align: middle-left;
+    white-space: normal;
+    line-height: 24px;
+}
+
+/* Exit Button */
+.exit-container {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.exit-button {
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: rgba(200, 60, 60, 0.8);
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+.exit-button:hover {
+    background-color: rgba(200, 60, 60, 0.2);
+    border-color: rgba(200, 60, 60, 1.0);
+}
+
+.exit-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('project://database/Assets/UI/Icons/exit-icon.png');
+    margin-right: 10px;
+}
+
+.exit-text {
+    font-size: 16px;
+    color: white;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+/*@media (max-width: 1200px) {*/
+/*    .main-content {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+    .settings-panel {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .description-panel {
+        max-width: none;
+    }
